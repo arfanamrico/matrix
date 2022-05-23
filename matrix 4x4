@@ -1,0 +1,17 @@
+#buat matix kosong
+matrix_a = [[0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0]]
+#isi matrix
+for i in range(4):
+  for j in range(4):
+    if i == j:
+      matrix_a[i][j] = 1
+    if i < j:
+      matrix_a[i][j] = 1
+    if i > j:
+      matrix_a[i][j] = 0
+print("hasil: ")
+for r in matrix_a:
+  print(r)
